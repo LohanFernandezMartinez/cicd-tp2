@@ -2,16 +2,9 @@ package com.devops.cicd.user;
 
 public class UserService {
 
-    /**
-     * Enregistre un utilisateur à partir des paramètres.
-     *
-     * Règles (voir spec) :
-     * - crée un User
-     * - renvoie l'utilisateur créé
-     * - propage les erreurs si les données sont invalides
-     */
     public User register(String email, String password, Role role) {
-        // TODO: implémenter en s'appuyant sur User
-        return null;
+        // Crée un User (les validations sont faites dans le constructeur de User)
+        // Propage les IllegalArgumentException si les données sont invalides
+        return new User(email, password, role);
     }
 }
