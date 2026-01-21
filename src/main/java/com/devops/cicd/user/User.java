@@ -3,7 +3,7 @@ package com.devops.cicd.user;
 import com.devops.cicd.PasswordPolicy;
 import static com.devops.cicd.user.Role.ADMIN;
 
-public class User {
+public final class User {
 
     private final String email;
     private final String password;
