@@ -14,7 +14,7 @@ public final class EmailValidator {
         // Règle : exactement un seul caractère '@'
         int firstAt = trimmedEmail.indexOf('@');
         int lastAt = trimmedEmail.lastIndexOf('@');
-        if (firstAt == -1 || firstAt != lastAt) {
+        if (firstAt == 0 || firstAt != lastAt) {
             return false;
         }
 
