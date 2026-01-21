@@ -14,12 +14,10 @@ public final class User {
         if (!EmailValidator.isValid(email)) {
             throw new IllegalArgumentException("email must be valid");
         }
-
         // Validation du password
         if (!PasswordPolicy.isStrong(password)) {
             throw new IllegalArgumentException("password must be strong");
         }
-
         // Validation du rôle
         if (role == null) {
             throw new IllegalArgumentException("role must not be null");
